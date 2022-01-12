@@ -1,17 +1,20 @@
 /* ..........................................SWIPER СЛАЙДЕР НАЧАЛО........................ */
 var swiper1 = new Swiper('.swiper1', {
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
 
     // Default parameters
     slidesPerView: 0,
     spaceBetween: 10,
+
     pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
     },
+
     // Responsive breakpoints1
     breakpoints: {
         // when window width is >= 360px

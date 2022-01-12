@@ -116,10 +116,16 @@ h6 {
 .wrapper {
     background: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
     margin: 0 auto;
-    padding: 48px 45px 0px;
+    position: relative;
+}
+.wrapper__container {
+    width: 334px;
+    margin: 0 auto;
+    padding-bottom: 28px;
 }
 .header {
     margin: 0 auto;
+    padding: 48px 0px 0px;
 }
 .header__container {
     margin: 0 auto;
@@ -186,7 +192,9 @@ h6 {
 .company {
     border-bottom: 1px solid rgba(225, 218, 162, 0.5);
     display: flex;
+    margin: 0 auto;
     margin-bottom: 61px;
+    width: 334px;
 }
 .company__container-face {
     margin-right: 28px;
@@ -219,10 +227,17 @@ h6 {
     height: 25px;
     background-image: url("../img/company-face/star.svg");
 }
+.class-car {
+    margin: 0 auto;
+    margin-bottom: 51px;
+}
 .class-car__title {
     margin-bottom: 21px;
 }
 .class-car__container {
+    padding-top: 8px;
+    margin: 0 auto;
+    position: relative;
     width: 334px;
     height: 213px;
     background: url("../img/class-car/VAZ-2106-1990.jpg"), #e5e0d3;
@@ -230,6 +245,48 @@ h6 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+.class-car__name {
+    width: 100%;
+    height: 67px;
+    background: rgba(12, 6, 36, 0.8);
+    border-radius: 0px 0px 20px 20px;
+    text-align: center;
+    padding-top: 12px;
+}
+.class-car__disc-container {
+    display: flex;
+    justify-content: space-between;
+    width: 76px;
+    margin-left: 8px;
+    margin-bottom: 104.5px;
+}
+.class-car__disc-item {
+    width: 35px;
+    height: 34px;
+    background: linear-gradient(180deg, rgba(179, 153, 114, 0.5) 0%, rgba(202, 194, 128, 0.5) 100%);
+    border-radius: 30px;
+    padding: 5px;
+}
+.class-car__disc-item h5 {
+    color: #0b0523;
+    text-align: center;
+}
+.swiper-pagination {
+    margin-bottom: 20px;
+}
+.swiper-pagination span {
+    background-color: #fff;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    opacity: 0;
+    color: #fafafa;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    opacity: 0;
+    color: #fafafa;
 }
 @font-face {
     font-family: "PublicSans";
