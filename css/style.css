@@ -240,11 +240,22 @@ h6 {
     position: relative;
     width: 334px;
     height: 213px;
-    background: url("../img/class-car/VAZ-2106-1990.jpg"), #e5e0d3;
     border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+}
+.vaz-2106-1990 {
+    background: url("../img/class-car/VAZ-2106-1990.jpg");
+}
+.BMW-5Series-2018 {
+    background-image: url("../img/class-car/BMW-5Series-2018.jpg");
+}
+.BMW-5Series-2015 {
+    background-image: url("../img/class-car/BMW-5Series-2015.jpg");
+}
+.BMW-MSeries-2013 {
+    background-image: url("../img/class-car/BMW-MSeries-2013.jpg");
 }
 .class-car__name {
     width: 100%;
