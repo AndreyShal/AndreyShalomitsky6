@@ -89,13 +89,21 @@ h6 {
 }
 
 /*----------------------------------------------------------------------------------------------------*/
+h3 {
+    font-family: "PublicSans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1d1543;
+}
 h4 {
     font-family: "PublicSans";
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
-    color: #e5e0d3;
+    color: #1d1543;
 }
 h5 {
     font-family: "PublicSans";
@@ -103,7 +111,7 @@ h5 {
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    color: #e5e0d3;
+    color: #1d1543;
 }
 h6 {
     font-family: "PublicSans";
@@ -111,7 +119,7 @@ h6 {
     font-weight: normal;
     font-size: 14px;
     line-height: 22px;
-    color: #e5e0d3;
+    color: #1d1543;
 }
 /* .......................menu-start................... */
 .menu__wrapper {
@@ -162,10 +170,36 @@ h6 {
 .returnToStartPage {
     margin-top: 167px;
 }
+.menu__wrapper h4 {
+    color: #e5e0d3;
+}
+.logotip1__item1Menu {
+    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern1.png");
+    top: 0;
+    left: 5px;
+}
+.logotip1__item2Menu {
+    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern2.png");
+    top: 11px;
+    left: 3px;
+}
+.logotip1__item3Menu {
+    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern3.png");
+    top: 12px;
+    left: 14px;
+}
+.logotip1__item4Menu {
+    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern4.png");
+    top: 2px;
+    left: 16px;
+}
+.logotip2Menu {
+    background-image: url("../img/header/logotip/logotip-white/logotip-white.png");
+}
 /* .......................menu-end................... */
 
 .wrapper {
-    background: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
+    background: #e5e0d3;
     margin: 0 auto;
     position: relative;
 }
@@ -195,10 +229,12 @@ h6 {
 .logotip2 {
     height: 30px;
     width: 130px;
-    background-image: url("../img/header/logotip/logotip-white/logotip-white.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+}
+.logotip2-site {
+    background-image: url("../img/header/logotip/logotip-black/logotip-black.png");
 }
 .logotip1 {
     position: relative;
@@ -213,35 +249,34 @@ h6 {
     height: 11.33px;
 }
 .logotip1__item1 {
-    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern1.png");
+    background-image: url("../img/header/logotip/logotip-black/logotip-black-pattern1.png");
     top: 0;
     left: 5px;
 }
 .logotip1__item2 {
-    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern2.png");
+    background-image: url("../img/header/logotip/logotip-black/logotip-black-pattern2.png");
     top: 11px;
     left: 3px;
 }
 .logotip1__item3 {
-    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern3.png");
+    background-image: url("../img/header/logotip/logotip-black/logotip-black-pattern3.png");
     top: 12px;
     left: 14px;
 }
 .logotip1__item4 {
-    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern4.png");
+    background-image: url("../img/header/logotip/logotip-black/logotip-black-pattern4.png");
     top: 2px;
     left: 16px;
 }
 .header-button {
     width: 22px;
     height: 16px;
-    background-image: url("../img/header/botton-white.svg");
+    background-image: url("../img/header/botton-black.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
 }
 .company {
-    border-bottom: 1px solid rgba(225, 218, 162, 0.5);
     display: flex;
     margin: 0 auto;
     margin-bottom: 61px;
@@ -251,40 +286,26 @@ h6 {
     margin-right: 28px;
 }
 .company__img {
-    width: 70px;
-    height: 70px;
-    background: url("../img/company-face/company-face2x.jpg"), #c4c4c4;
+    width: 120px;
+    height: 120px;
+    background-image: url("../img/company-face/company-face2x.png");
     border-radius: 20px;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: contain;
     margin-bottom: 20px;
 }
 .company__container-info {
+    padding-top: 12px;
 }
 .company__name1 {
 }
 .company__name1-1 {
-}
-.stars__container {
-    display: flex;
-    justify-content: space-between;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-.stars__item {
-    width: 25px;
-    height: 25px;
-    background-image: url("../img/company-face/star.svg");
+    margin-bottom: 12px;
 }
 .class-car {
     margin: 0 auto;
     margin-bottom: 51px;
-}
-.class-car__title {
-    margin-bottom: 21px;
-    padding-left: 20px;
 }
 .class-car__container {
     width: 334px;
@@ -298,63 +319,67 @@ h6 {
 .vaz-2106-1990 {
     background-image: url("../img/class-car/VAZ-2106-1990.jpg");
 }
-.BMW-5Series-2018 {
-    background-image: url("../img/class-car/BMW-5Series-2018.jpg");
-}
-.BMW-5Series-2015 {
-    background-image: url("../img/class-car/BMW-5Series-2015.jpg");
-}
-.BMW-MSeries-2013 {
-    background-image: url("../img/class-car/BMW-MSeries-2013.jpg");
-}
-.class-car__name {
+.model-car {
+    text-align: center;
     position: absolute;
     width: 100%;
-    height: 67px;
-    background: rgba(12, 6, 36, 0.8);
-    border-radius: 0px 0px 20px 20px;
-    text-align: center;
-    padding-top: 12px;
     bottom: 0;
 }
-.class-car__disc-container {
-    position: absolute;
+.car__detales {
+    margin: 0 auto;
+    width: 100%;
+    height: 591px;
+    background: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
+    box-shadow: 0px 0px 20px #ffffff;
+    border-radius: 50px;
+    padding-top: 26px;
+}
+.car-model {
+    text-align: center;
+    margin-bottom: 22px;
+}
+.car-model h4 {
+    color: #e5e0d3;
+}
+.rent-year {
     display: flex;
     justify-content: space-between;
-    width: 76px;
-    top: 8px;
-    left: 8px;
+    height: 76px;
+    margin-bottom: 37px;
 }
-.class-car__disc-item {
-    width: 35px;
-    height: 34px;
-    background: linear-gradient(180deg, rgba(179, 153, 114, 0.5) 0%, rgba(202, 194, 128, 0.5) 100%);
-    border-radius: 30px;
-    padding: 5px;
+.rent {
+    width: 100%;
+    background: #e5e0d3;
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 10px;
 }
-.class-car__disc-item h5 {
-    color: #0b0523;
+.year {
+    width: 100%;
+    background: #e5e0d3;
+    border-radius: 10px 0px 0px 10px;
+    margin-left: 10px;
+    margin-left: auto;
+    margin-right: 0;
+}
+.rent-year__position {
+    display: flex;
+    align-items: center;
+}
+.rent-year__container {
+    margin: 0 auto;
+}
+.rent-year__title {
     text-align: center;
+    width: 100%;
 }
-.swiper-pagination {
-    margin-bottom: 20px;
+.rent-year__info {
+    text-align: center;
+    width: 100%;
 }
-.swiper-pagination span {
-    background-color: #fff;
+.description {
+    width: 334px;
+    margin: 0 auto;
 }
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-    opacity: 0;
-    color: #fafafa;
-}
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
-    opacity: 0;
-    color: #fafafa;
-}
-@font-face {
-    font-family: "PublicSans";
-    src: url("../fonts/PublicSans/PublicSans-Italic.ttf");
-    font-style: normal;
-    font-weight: normal;
+.description h6 {
+    color: #e5e0d3;
 }
