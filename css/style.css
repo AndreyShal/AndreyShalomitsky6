@@ -113,13 +113,64 @@ h6 {
     line-height: 22px;
     color: #e5e0d3;
 }
+/* .......................menu-start................... */
+.menu__wrapper {
+    background: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    padding-top: 48px;
+    height: 100vh;
+}
+.menu__hidden {
+    display: none;
+}
+.menu {
+    width: 344px;
+    margin: 0 auto;
+}
+.logotip__container-wrapper {
+    border-bottom: 1px solid #e5e0d3;
+    height: 50px;
+    width: 294px;
+}
+.header-button2-wrapper {
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+.header-button2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 23px;
+    background-image: url("../img/header/botton-white2.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.menu__wrapper ul {
+    width: 320px;
+    margin: 0 auto;
+}
+.menu__wrapper ul li {
+    margin-bottom: 40px;
+}
+.returnToStartPage {
+    margin-top: 167px;
+}
+/* .......................menu-end................... */
+
 .wrapper {
     background: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
     margin: 0 auto;
     position: relative;
 }
 .wrapper__container {
-    width: 334px;
+    width: 344px;
     margin: 0 auto;
     padding-bottom: 28px;
 }
@@ -235,18 +286,16 @@ h6 {
     margin-bottom: 21px;
 }
 .class-car__container {
-    padding-top: 8px;
-    margin: 0 auto;
-    position: relative;
     width: 334px;
     height: 213px;
     border-radius: 20px;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background-size: contain;
+    position: relative;
+    margin: 0 auto;
 }
 .vaz-2106-1990 {
-    background: url("../img/class-car/VAZ-2106-1990.jpg");
+    background-image: url("../img/class-car/VAZ-2106-1990.jpg");
 }
 .BMW-5Series-2018 {
     background-image: url("../img/class-car/BMW-5Series-2018.jpg");
@@ -258,19 +307,22 @@ h6 {
     background-image: url("../img/class-car/BMW-MSeries-2013.jpg");
 }
 .class-car__name {
+    position: absolute;
     width: 100%;
     height: 67px;
     background: rgba(12, 6, 36, 0.8);
     border-radius: 0px 0px 20px 20px;
     text-align: center;
     padding-top: 12px;
+    bottom: 0;
 }
 .class-car__disc-container {
+    position: absolute;
     display: flex;
     justify-content: space-between;
     width: 76px;
-    margin-left: 8px;
-    margin-bottom: 104.5px;
+    top: 8px;
+    left: 8px;
 }
 .class-car__disc-item {
     width: 35px;

@@ -35,3 +35,13 @@ var swiper1 = new Swiper('.swiper1', {
     }
 })
 /* ..........................................SWIPER СЛАЙДЕР КОНЕЦ........................ */
+document.getElementById("sweeties1").addEventListener('click', () => toggleMe3(document.querySelector(".menu__wrapper")));
+document.getElementById("sweeties2").addEventListener('click', () => toggleMe3(document.querySelector(".menu__wrapper")));
+
+function toggleMe3(x) {
+    if (!x) return true;
+    if (x.style.display === "none" || x.style.display === "") {
+        document.querySelector('.menu__wrapper').classList.toggle('menu__hidden');
+    }
+    return true;
+}
