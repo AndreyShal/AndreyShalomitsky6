@@ -134,9 +134,9 @@ h6 {
     background-image: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 100;
     padding-top: 48px;
 }
@@ -175,9 +175,6 @@ h6 {
 .menu__wrapper ul li {
     margin-bottom: 40px;
 }
-.returnToStartPage {
-    margin-top: 167px;
-}
 .menu__wrapper h4 {
     color: #e5e0d3;
 }
@@ -209,23 +206,38 @@ h6 {
 .wrapper {
     background: #e5e0d3;
     margin: 0 auto;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .wrapper__container {
     width: 344px;
+    height: 100vh;
     margin: 0 auto;
-    padding-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper__container__block {
+    width: 100vw;
+}
+.swip-hidden {
+    display: none;
 }
 .header {
     margin: 0 auto;
-    padding: 48px 0px 0px;
+    padding-top: 2vh;
+    width: 90vw;
 }
 .header__container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 35.87px;
+    margin-bottom: 1vh;
 }
 .logotip__container {
     /* height: 30px; */
@@ -287,7 +299,7 @@ h6 {
 .company {
     display: flex;
     margin: 0 auto;
-    margin-bottom: 61px;
+    margin-bottom: 2.5vh;
     width: 334px;
 }
 .company__container-face {
@@ -301,7 +313,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
-    margin-bottom: 20px;
+    margin-bottom: 1vh;
 }
 .company__container-info {
     padding-top: 12px;
@@ -313,7 +325,7 @@ h6 {
 }
 .class-car {
     margin: 0 auto;
-    margin-bottom: 51px;
+    margin-bottom: 2vh;
 }
 .class-car__container {
     width: 334px;
@@ -336,24 +348,40 @@ h6 {
 .car__detales {
     margin: 0 auto;
     width: 100%;
-    height: 591px;
+    height: 50vh;
     background: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
     box-shadow: 0px 0px 20px #ffffff;
     border-radius: 50px;
-    padding-top: 26px;
+    padding-top: 1vh;
 }
 .car-model {
     text-align: center;
-    margin-bottom: 22px;
+    margin-bottom: 1vh;
 }
 .car-model h4 {
     color: #e5e0d3;
 }
+.pointer-swip-item1 {
+    background-image: url("../img/pointers/pointer.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 18px;
+    height: 9px;
+}
+.pointer-swip-item2 {
+    background-image: url("../img/pointers/pointer-line.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 20px;
+    width: 100%;
+}
 .rent-year {
     display: flex;
     justify-content: space-between;
-    height: 76px;
-    margin-bottom: 37px;
+    height: 8vh;
+    margin-bottom: 2vh;
 }
 .rent {
     width: 100%;
@@ -398,10 +426,10 @@ h6 {
     color: #e5e0d3;
 }
 .origin {
-    margin-bottom: 19px;
+    margin-bottom: 1vh;
 }
 .description__title ul {
-    margin-bottom: 6px;
+    margin-bottom: 0.5vh;
 }
 .description__title ul li {
     list-style: disc;
@@ -430,4 +458,9 @@ h6 {
     margin: 0 auto;
     text-align: center;
     padding: 10px 20px;
+}
+.pointer-swip {
+    width: 18px;
+    height: 30px;
+    margin: 0 auto;
 }

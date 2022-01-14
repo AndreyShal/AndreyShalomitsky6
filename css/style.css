@@ -31,7 +31,7 @@ aside {
 
 html,
 body {
-    /* height: 100%; */
+    height: 100%;
     width: 100%;
     font-size: 100%;
     line-height: 1;
@@ -118,17 +118,19 @@ h6 {
     background-image: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: 0;
     z-index: 100;
-    padding-top: 48px;
+    margin: 0 auto;
+    padding-top: 2vh;
 }
 .menu__hidden {
     display: none;
 }
 .menu {
     width: 344px;
+    width: 90vw;
     margin: 0 auto;
 }
 .logotip__container-wrapper {
@@ -159,31 +161,41 @@ h6 {
 .menu__wrapper ul li {
     margin-bottom: 40px;
 }
-.returnToStartPage {
-    margin-top: 167px;
-}
+
 /* .......................menu-end................... */
 
 .wrapper {
     background: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
     margin: 0 auto;
-    position: relative;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 .wrapper__container {
     width: 344px;
+    height: 100vh;
     margin: 0 auto;
-    padding-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper__container__block {
+    width: 100vw;
 }
 .header {
     margin: 0 auto;
-    padding: 48px 0px 0px;
+    padding-top: 2vh;
+    width: 90vw;
 }
 .header__container {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 35.87px;
+    margin-bottom: 1vh;
 }
 .logotip__container {
     /* height: 30px; */
@@ -244,7 +256,7 @@ h6 {
     border-bottom: 1px solid rgba(225, 218, 162, 0.5);
     display: flex;
     margin: 0 auto;
-    margin-bottom: 61px;
+    margin-bottom: 2.5vh;
     width: 334px;
 }
 .company__container-face {
@@ -258,7 +270,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    margin-bottom: 20px;
+    margin-bottom: 1vh;
 }
 .company__container-info {
 }
@@ -280,10 +292,10 @@ h6 {
 }
 .class-car {
     margin: 0 auto;
-    margin-bottom: 51px;
+    margin-bottom: 2vh;
 }
 .class-car__title {
-    margin-bottom: 21px;
+    margin-bottom: 1vh;
     padding-left: 20px;
 }
 .class-car__container {
@@ -337,10 +349,9 @@ h6 {
     text-align: center;
 }
 .swiper-pagination {
-    margin-bottom: 20px;
+    margin-top: 250px;
 }
 .swiper-pagination span {
-    background-color: #fff;
 }
 .swiper-button-next:after,
 .swiper-rtl .swiper-button-prev:after {
