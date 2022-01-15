@@ -138,7 +138,6 @@ h6 {
     top: 0;
     left: 0;
     z-index: 100;
-    margin: 0 auto;
     padding-top: 2vh;
 }
 .menu__hidden {
@@ -146,7 +145,6 @@ h6 {
 }
 .menu {
     width: 344px;
-    width: 90vw;
     margin: 0 auto;
 }
 .logotip__container-wrapper {
@@ -171,8 +169,13 @@ h6 {
     background-size: contain;
 }
 .menu__wrapper ul {
+    padding-top: 5vh;
     width: 320px;
+    /* height: 90vh; */
     margin: 0 auto;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: space-between; */
 }
 .menu__wrapper ul li {
     margin-bottom: 4vh;
@@ -180,7 +183,32 @@ h6 {
 .returnToStartPage {
     margin-top: 10vh;
 }
-
+.menu__wrapper h4 {
+    color: #e5e0d3;
+}
+.logotip1__item1Menu {
+    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern1.png");
+    top: 0;
+    left: 5px;
+}
+.logotip1__item2Menu {
+    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern2.png");
+    top: 11px;
+    left: 3px;
+}
+.logotip1__item3Menu {
+    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern3.png");
+    top: 12px;
+    left: 14px;
+}
+.logotip1__item4Menu {
+    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern4.png");
+    top: 2px;
+    left: 16px;
+}
+.logotip2Menu {
+    background-image: url("../img/header/logotip/logotip-white/logotip-white.png");
+}
 /* .......................menu-end................... */
 
 .wrapper {
