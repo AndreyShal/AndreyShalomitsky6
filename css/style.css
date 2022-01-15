@@ -290,6 +290,9 @@ h6 {
     height: 25px;
     background-image: url("../img/company-face/star.svg");
 }
+/* :not(:active) > a.DoubleClick1:not(:hover) {
+    pointer-events: none;
+} */
 .class-car {
     margin: 0 auto;
     margin-bottom: 2vh;

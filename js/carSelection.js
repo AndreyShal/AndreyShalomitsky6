@@ -59,7 +59,10 @@ function InitApp() //Растягиваем холст на весь экран
     document.querySelector(".wrapper").height = window.innerHeight;
 }
 // ...................................................................................
-
+document.querySelector('.pointer-swip').addEventListener('touchstart', handleTouchStart, false);
+document.querySelector('.pointer-swip').addEventListener('touchmove', handleTouchMove, false);
+document.querySelector('#car__detales-wrapper').addEventListener('touchstart', handleTouchStart, false);
+document.querySelector('#car__detales-wrapper').addEventListener('touchmove', handleTouchMove, false);
 
 
 let x1 = null;
@@ -93,12 +96,20 @@ function handleTouchMove(event) {
         // t - b
         if (yDiff > 0) {
             console.log('down');
-
+            document.querySelector('.car__detales-hiden').classList.add('swip-hidden');
+            document.querySelector('#wrapper__container-company').classList.remove('swip-hidden');
+            document.querySelector('.pointer-swip').classList.remove('swip-hidden');
+            document.querySelector(".car__detales").classList.add('car__detales-height1');
+            document.querySelector("#wrapper__container-class-car").classList.remove("wrapper__container-class-car");
 
         }
         else {
             console.log('top');
-
+            document.querySelector('.car__detales-hiden').classList.remove('swip-hidden');
+            document.querySelector('#wrapper__container-company').classList.add('swip-hidden');
+            document.querySelector('.pointer-swip').classList.add('swip-hidden');
+            document.querySelector(".car__detales").classList.remove('car__detales-height1');
+            document.querySelector("#wrapper__container-class-car").classList.add("wrapper__container-class-car");
         }
     }
     x1 = null;
