@@ -45,20 +45,28 @@ function toggleMe3(x) {
     }
     return true;
 }
-
-/////////////////////////////////////////////////////////////////////////////////////
-InitApp(); //Инициализировать приложение
-
-window.addEventListener("resize", InitApp); //При растягивании окна приложение будет инициализироваться заново
-
-function InitApp() //Растягиваем холст на весь экран
-{
-    document.querySelector(".menu__wrapper").width = window.innerWidth;
-    document.querySelector(".menu__wrapper").height = window.innerHeight;
-    document.querySelector(".wrapper").width = window.innerWidth;
-    document.querySelector(".wrapper").height = window.innerHeight;
+// ....................................................скрыть меню после перехода по якорной ссылк Начало.......................
+let scroll__botton = document.querySelectorAll(".menu-hidden-click");
+for (let i = 0; i < scroll__botton.length; i++) {
+    scroll__botton[i].addEventListener("click", toggleMenu);
+    function toggleMenu() {
+        document.querySelector('.menu__wrapper').classList.toggle('menu__hidden');
+    };
 }
-// ...................................................................................
+// ....................................................скрыть меню после перехода по якорной ссылк Конец.......................
+/////////////////////////////////////////////////////////////////////////////////////
+// InitApp(); //Инициализировать приложение
+
+// window.addEventListener("resize", InitApp); //При растягивании окна приложение будет инициализироваться заново
+
+// function InitApp() //Растягиваем холст на весь экран
+// {
+//     document.querySelector(".menu__wrapper").width = window.innerWidth;
+//     document.querySelector(".menu__wrapper").height = window.innerHeight;
+//     document.querySelector(".wrapper").width = window.innerWidth;
+//     document.querySelector(".wrapper").height = window.innerHeight;
+// }
+// // ...................................................................................
 
 
 

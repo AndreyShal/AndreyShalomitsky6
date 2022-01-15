@@ -215,14 +215,14 @@ h6 {
     background: #e5e0d3;
     margin: 0 auto;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     position: fixed;
     top: 0;
     left: 0;
 }
 .wrapper__container {
     /* width: 344px; */
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
