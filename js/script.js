@@ -62,9 +62,11 @@ function InitApp() //Растягиваем холст на весь экран
 // document.addEventListener('touchstart', handleTouchStart, false);
 // document.addEventListener('touchmove', handleTouchMove, false);
 
-const logBlock = document.querySelector('.class-car');
-document.querySelector('.class-car').addEventListener('touchstart', handleTouchStart, false);
-document.querySelector('.class-car').addEventListener('touchmove', handleTouchMove, false);
+// const logBlock = document.querySelector('.class-car');
+document.querySelector('.pointer-swip').addEventListener('touchstart', handleTouchStart, false);
+document.querySelector('.pointer-swip').addEventListener('touchmove', handleTouchMove, false);
+document.querySelector('#car__detales-wrapper').addEventListener('touchstart', handleTouchStart, false);
+document.querySelector('#car__detales-wrapper').addEventListener('touchmove', handleTouchMove, false);
 
 
 let x1 = null;
@@ -91,14 +93,28 @@ function handleTouchMove(event) {
         // r - l
         if (xDiff > 0) {
             console.log('right');
-            document.querySelector('.menu__wrapper').classList.toggle('menu__hidden');
         }
         else console.log('left');
     }
     else {
         // t - b
-        if (yDiff > 0) console.log('down');
-        else console.log('top');
+        if (yDiff > 0) {
+            console.log('down');
+            document.querySelector('.car__detales-hiden').classList.add('swip-hidden');
+            document.querySelector('#wrapper__container-company').classList.remove('swip-hidden');
+            document.querySelector('.pointer-swip').classList.remove('swip-hidden');
+            document.querySelector(".car__detales").classList.add('car__detales-height1');
+            document.querySelector("#wrapper__container-class-car").classList.remove("wrapper__container-class-car");
+
+        }
+        else {
+            console.log('top');
+            document.querySelector('.car__detales-hiden').classList.remove('swip-hidden');
+            document.querySelector('#wrapper__container-company').classList.add('swip-hidden');
+            document.querySelector('.pointer-swip').classList.add('swip-hidden');
+            document.querySelector(".car__detales").classList.remove('car__detales-height1');
+            document.querySelector("#wrapper__container-class-car").classList.add("wrapper__container-class-car");
+        }
     }
     x1 = null;
     y1 = null;
