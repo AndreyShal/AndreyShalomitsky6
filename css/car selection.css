@@ -245,7 +245,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* margin-bottom: 1vh; */
+    margin-bottom: 36px;
 }
 .logotip__container {
     /* height: 30px; */
@@ -366,7 +366,7 @@ h6 {
 #car__detales-wrapper {
     margin: 0 auto;
     width: 100%;
-    padding-top: 1vh;
+    padding-top: 26px;
     border-radius: 50px;
     box-shadow: 0px 0px 20px #ffffff;
     background: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
@@ -376,7 +376,7 @@ h6 {
 }
 .car-model {
     text-align: center;
-    margin-bottom: 1vh;
+    margin-bottom: 22px;
 }
 .car-model h4 {
     color: #e5e0d3;
@@ -437,10 +437,10 @@ h6 {
     margin: 0 auto;
 }
 .description__container1 {
-    margin-bottom: 1vh;
+    margin-bottom: 18px;
 }
 .description__container2 {
-    margin-bottom: 1vh;
+    margin-bottom: 43px;
 }
 .description h6 {
     color: #e5e0d3;
@@ -477,8 +477,8 @@ h6 {
     border-radius: 10px;
     margin: 0 auto;
     text-align: center;
-    padding: 0.5vh 20px;
-    margin-bottom: 1vh;
+    padding: 7px 20px;
+    margin-bottom: 42px;
 }
 .pointer-swip {
     width: 18px;

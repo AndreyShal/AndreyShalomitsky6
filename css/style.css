@@ -172,9 +172,9 @@ h6 {
     margin: 0 auto;
     width: 100%;
     /* height: 100%; */
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
+    /* top: 0;
+    left: 0; */
 }
 .wrapper__container {
     width: 344px;
@@ -198,7 +198,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1vh;
+    margin-bottom: 36px;
 }
 .logotip__container {
     /* height: 30px; */
@@ -259,7 +259,7 @@ h6 {
     border-bottom: 1px solid rgba(225, 218, 162, 0.5);
     display: flex;
     margin: 0 auto;
-    margin-bottom: 2.5vh;
+    margin-bottom: 61px;
     width: 334px;
 }
 .company__container-face {
@@ -273,7 +273,7 @@ h6 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    margin-bottom: 1vh;
+    margin-bottom: 20px;
 }
 .company__container-info {
 }
@@ -298,10 +298,10 @@ h6 {
 } */
 .class-car {
     margin: 0 auto;
-    margin-bottom: 2vh;
+    margin-bottom: 51px;
 }
 .class-car__title {
-    margin-bottom: 1vh;
+    margin-bottom: 21px;
     padding-left: 20px;
 }
 .class-car__container {
@@ -355,7 +355,7 @@ h6 {
     text-align: center;
 }
 .swiper-pagination {
-    margin-top: 250px;
+    margin-top: 270px;
 }
 .swiper-pagination span {
 }
