@@ -349,11 +349,17 @@ h6 {
 .vaz-2106-1990 {
     background-image: url("../img/class-car/VAZ-2106-1990.jpg");
 }
+.BMW-5Series-2015 {
+    background-image: url("../img/class-car/BMW-5Series-2015.jpg");
+}
 .model-car {
     text-align: center;
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+.BMW-5Series-2015__model-car {
+    text-align: center;
 }
 .car__detales {
     margin: 0 auto;

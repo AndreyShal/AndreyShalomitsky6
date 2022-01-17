@@ -354,6 +354,12 @@ h6 {
     color: #0b0523;
     text-align: center;
 }
+.swiper1 .class-car {
+    margin-bottom: 0;
+}
+.swiper1 {
+    margin-bottom: 79px;
+}
 .swiper-pagination {
     margin-top: 270px;
 }

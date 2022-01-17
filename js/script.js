@@ -21,6 +21,7 @@ var swiper1 = new Swiper('.swiper1', {
         360: {
             slidesPerView: 1,
             spaceBetween: 0,
+            initialSlide: 1,
         },
         // when window width is >= 768px
         768: {
