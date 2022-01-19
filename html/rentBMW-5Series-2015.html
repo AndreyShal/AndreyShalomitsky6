@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>car selection</title>
+    <link rel="stylesheet" href="../swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/rentThisCar.css" />
+    <link rel="icon" href="data:;base64,=">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes,initial-scale=1">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+    <div class="menu__wrapper menu__hidden">
+        <div class="menu">
+            <div class="menu__header">
+                <div class="header__container">
+                    <div class="logotip__container-wrapper">
+                        <div class="logotip__container">
+                            <a href="http://127.0.0.1:5500/index.html">
+                                <div class="logotip1" id="logotip1">
+                                    <div class="logotip1__item logotip1__item1Menu"></div>
+                                    <div class="logotip1__item logotip1__item2Menu"></div>
+                                    <div class="logotip1__item logotip1__item3Menu"></div>
+                                    <div class="logotip1__item logotip1__item4Menu"></div>
+                                </div>
+                            </a>
+                            <div class="logotip2 logotip2Menu"></div>
+                        </div>
+                    </div>
+                    <div class="header-button2-wrapper">
+                        <div id="sweeties2" class="header-button2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul>
+            <li class="menu-hidden-click"><a href="#">
+                    <h4>Account</h4>
+                </a></li>
+            <li class="menu-hidden-click"><a href="#">
+                    <h4>History</h4>
+                </a></li>
+            <li class="menu-hidden-click"><a href="#">
+                    <h4>Options</h4>
+                </a></li>
+            <li class="menu-hidden-click"><a href="#">
+                    <h4>FAQ</h4>
+                </a></li>
+            <li class="menu-hidden-click"><a href="#">
+                    <h4>How To Join</h4>
+                </a></li>
+            <li class="menu-hidden-click"><a href="#">
+                    <h4>About Us</h4>
+                </a></li>
+            <li class="menu-hidden-click"><a href="#">
+                    <h4>Contacts</h4>
+                </a></li>
+            <li class="menu-hidden-click"><a href="#">
+                    <h4>Private Policy</h4>
+                </a></li>
+            <li class="returnToStartPage menu-hidden-click">
+                <a href="../index.html">
+                    <h4>Return to start page</h4>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__container">
+                <div class="logotip__container">
+                    <div class="logotip1">
+                        <div class="logotip1__item logotip1__item1"></div>
+                        <div class="logotip1__item logotip1__item2"></div>
+                        <div class="logotip1__item logotip1__item3"></div>
+                        <div class="logotip1__item logotip1__item4"></div>
+                    </div>
+                    <div class="logotip2 logotip2-site"></div>
+                </div>
+                <div id="sweeties1" class="header-button"></div>
+            </div>
+        </div>
+        <div class="dateAndTime">
+            <div class="dateAndTime__title">
+                <h4>Date and time</h4>
+            </div>
+            <div class="dateAndTime__container-wrapper">
+                <div class="dateAndTime__container">
+                    <div class="dateAndTime__block1">
+                        <h5>from</h5>
+                    </div>
+                    <div class="dateAndTime__block2">
+                        <select class="dateAndTime-select" size="1">
+                            <option value="1">
+                                <h5>17 Dec</h5>
+                            </option>
+                            <option value="2">
+                                <h5>18 Dec</h5>
+                            </option>
+                            <option value="2">
+                                <h5>19 Dec</h5>
+                            </option>
+                            <option value="2">
+                                <h5>20 Dec</h5>
+                            </option>
+                        </select>
+                        <select class="dateAndTime-select" size="1">
+                            <option value="1">
+                                <h5>11:00 AM</h5>
+                            </option>
+                            <option value="2">
+                                <h5>12:00 AM</h5>
+                            </option>
+                            <option value="2">
+                                <h5>13:00 AM</h5>
+                            </option>
+                            <option value="2">
+                                <h5>14:00 AM</h5>
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="dateAndTime__container">
+                    <div class="dateAndTime__block1">
+                        <h5>to</h5>
+                    </div>
+                    <div class="dateAndTime__block2">
+                        <select class="dateAndTime-select" size="1">
+                            <option value="1">
+                                <h5>21 Dec</h5>
+                            </option>
+                            <option value="2">
+                                <h5>22 Dec</h5>
+                            </option>
+                            <option value="2">
+                                <h5>23 Dec</h5>
+                            </option>
+                            <option value="2">
+                                <h5>24 Dec</h5>
+                            </option>
+                        </select>
+                        <select class="dateAndTime-select" size="1">
+                            <option value="1">
+                                <h5>14:30 PM</h5>
+                            </option>
+                            <option value="2">
+                                <h5>15:30 PM</h5>
+                            </option>
+                            <option value="2">
+                                <h5>16:30 PM</h5>
+                            </option>
+                            <option value="2">
+                                <h5>17:30 PM</h5>
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="place-delivery__title">
+            <h4>Place of delivery of car</h4>
+        </div>
+        <input class="place-delivery__input" type="text" value="Elm St. 5">
+        <div id="map" class="map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A550aecd7bbb3dc14aac56d3e69adb73f21386be2153c6f00e5b2bd6a9e4c066a&amp;width=334&amp;height=270&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div class="ForPayment__title">
+            <h4>For payment:</h4>
+        </div>
+        <div class="ForPayment__title2">
+            <h3>449,50 USD</h3>
+        </div>
+        <div id="button1" class="button1">
+            <h4>It`s a deal!</h4>
+        </div>
+        <div id="button2" class="button2">
+            <h2>
+                < Previous page</h2>
+        </div>
+        <div class="line"></div>
+    </div>
+    <!-- <script src="../swiper/swiper-bundle.min.js"></script> -->
+    <script src="../js/carSelection.js"></script>
+</body>
+
+</html>
