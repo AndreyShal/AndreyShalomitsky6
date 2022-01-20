@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-    <title>Hello Ivan!</title>
-    <!-- <link rel="stylesheet" href="swiper/swiper-bundle.min.css" /> -->
-    <link rel="stylesheet" href="../css/HelloIvan!.css" />
+    <title>ChooseTheCountry</title>
+    <!-- <link rel="stylesheet" href="../swiper/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="../../css/ChooseTheCountry.css" />
     <link rel="icon" href="data:;base64,=">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=yes,initial-scale=1">
@@ -18,13 +18,15 @@
                 <div class="header__container">
                     <div class="logotip__container-wrapper">
                         <div class="logotip__container">
-                            <div class="logotip1" onclick="location.href='http://127.0.0.1:5500/index.html';">
-                                <div class="logotip1__item logotip1__item1"></div>
-                                <div class="logotip1__item logotip1__item2"></div>
-                                <div class="logotip1__item logotip1__item3"></div>
-                                <div class="logotip1__item logotip1__item4"></div>
-                            </div>
-                            <div class="logotip2"></div>
+                            <a href="http://127.0.0.1:5500/index.html">
+                                <div class="logotip1" id="logotip1">
+                                    <div class="logotip1__item logotip1__item1Menu"></div>
+                                    <div class="logotip1__item logotip1__item2Menu"></div>
+                                    <div class="logotip1__item logotip1__item3Menu"></div>
+                                    <div class="logotip1__item logotip1__item4Menu"></div>
+                                </div>
+                            </a>
+                            <div class="logotip2 logotip2Menu"></div>
                         </div>
                     </div>
                     <div class="header-button2-wrapper">
@@ -34,7 +36,7 @@
             </div>
         </div>
         <ul>
-            <li class="menu-hidden-click"><a href="html/YourAccount.html">
+            <li class="menu-hidden-click"><a href="#">
                     <h4>Account</h4>
                 </a></li>
             <li class="menu-hidden-click"><a href="#">
@@ -58,9 +60,11 @@
             <li class="menu-hidden-click"><a href="#">
                     <h4>Private Policy</h4>
                 </a></li>
-            <li class="returnToStartPage menu-hidden-click"><a href="../index.html">
+            <li class="returnToStartPage menu-hidden-click">
+                <a href="../index.html">
                     <h4>Return to start page</h4>
-                </a></li>
+                </a>
+            </li>
         </ul>
     </div>
     <div class="wrapper">
@@ -78,33 +82,36 @@
                 <div id="sweeties1" class="header-button"></div>
             </div>
         </div>
-        <div class="HelloIvan">
-            <div class="HelloIvan__title">
-                <h4>Hello, Ivan!</h4>
+        <div class="ChooseTheCountry">
+            <div class="ChooseTheCountry__container">
+                <div class="ChooseTheCountry__title">
+                    <h4>Choose the country</h4>
+                </div>
+                <div class="ChooseTheCountry__block">
+                    <select id="countries-select" class="ChooseTheCountry-select"></select>
+                </div>
             </div>
-            <div class="HelloIvan__txt">
-                <h5>You will:</h5>
-            </div>
-            <div class="HelloIvan-button__wrapper">
-                <div class="HelloIvan__button">
-                    <h2>Rent a Car</h2>
+            <div class="ChooseTheCountry__container">
+                <div class="ChooseTheCountry__title">
+                    <h4>City</h4>
                 </div>
-                <div class="HelloIvan__button">
-                    <h2>View History</h2>
-                </div>
-                <div class="HelloIvan__button">
-                    <h2>View Your Account</h2>
-                </div>
-                <div class="HelloIvan__button">
-                    <h2>Contact Us</h2>
+                <div class="ChooseTheCountry__block">
+                    <select id="cities-select" class="ChooseTheCountry-select"></select>
                 </div>
             </div>
         </div>
-        <div class="background-car"></div>
+        <div id="map" class="map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4861381aa011abe8d4161003ae80837c0ac96eef7ebdf6c71c354f46fbac8bb6&amp;width=334&amp;height=463&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+        <div id="button1" class="button1">
+            <h2>Next step ></h2>
+        </div>
         <div class="line"></div>
     </div>
-    <!-- <script src="swiper/swiper-bundle.min.js"></script> -->
-    <script src="../js/toggleMenu.js"></script>
+    <!-- <script src="../swiper/swiper-bundle.min.js"></script> -->
+    <script src="../../js/toggleMenu.js"></script>
+    <script src="../../js/ChooseTheCountry.js"></script>
 </body>
 
 </html>

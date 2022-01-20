@@ -1,3 +1,4 @@
+/* ..........................................SWIPER СЛАЙДЕР НАЧАЛО........................ */
 var swiper1 = new Swiper('.swiper1', {
 
     // navigation: {
@@ -6,6 +7,7 @@ var swiper1 = new Swiper('.swiper1', {
     // },
 
     // Default parameters
+    direction: 'vertical',
     slidesPerView: 0,
     spaceBetween: 10,
 
@@ -18,9 +20,9 @@ var swiper1 = new Swiper('.swiper1', {
     breakpoints: {
         // when window width is >= 360px
         360: {
-            slidesPerView: 1,
+            slidesPerView: 3.2,
             spaceBetween: 0,
-            initialSlide: 1,
+            // initialSlide: 1,
         },
         // when window width is >= 768px
         768: {
@@ -34,3 +36,4 @@ var swiper1 = new Swiper('.swiper1', {
         },
     }
 })
+/* ..........................................SWIPER СЛАЙДЕР КОНЕЦ........................ */

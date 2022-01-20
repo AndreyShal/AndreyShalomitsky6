@@ -40,6 +40,7 @@ body {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     /* overflow-x: hidden; */
+    background-image: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
 }
 
 input,
@@ -89,12 +90,28 @@ h6 {
 }
 
 /*----------------------------------------------------------------------------------------------------*/
+h2 {
+    font-family: "PublicSans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 26px;
+    color: #e5e0d3;
+}
+h3 {
+    font-family: "PublicSans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #e5e0d3;
+}
 h4 {
     font-family: "PublicSans";
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     color: #e5e0d3;
 }
 h5 {
@@ -113,271 +130,84 @@ h6 {
     line-height: 22px;
     color: #e5e0d3;
 }
+span {
+    font-family: "PublicSans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #e5e0d3;
+}
 /* .......................menu-start................... */
-.menu__wrapper {
-    background-image: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
+.wrapper {
+    position: relative;
+    /* background-image: linear-gradient(180deg, #0b0523 0%, #1d1543 100%); */
     width: 100%;
     height: 100%;
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    left: 0;
-    z-index: 100;
-    margin: 0 auto;
-    padding-top: 2vh;
-}
-.menu__hidden {
-    display: none;
-}
-.menu {
-    width: 344px;
-    width: 90vw;
-    margin: 0 auto;
-}
-.logotip__container-wrapper {
-    border-bottom: 1px solid #e5e0d3;
-    height: 50px;
-    width: 294px;
-}
-.header-button2-wrapper {
-    width: 30px;
-    height: 30px;
-    position: relative;
-}
-.header-button2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 28px;
-    height: 23px;
-    background-image: url("../img/header/botton-white2.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-}
-.menu__wrapper ul {
-    width: 320px;
-    margin: 0 auto;
-}
-.menu__wrapper ul li {
-    margin-bottom: 4vh;
-}
-.returnToStartPage {
-    margin-top: 10vh;
-}
-
-/* .......................menu-end................... */
-
-.wrapper {
-    background: linear-gradient(180deg, #0b0523 0%, #1d1543 100%);
-    margin: 0 auto;
-    width: 100%;
-    /* height: 100%; */
-    position: relative;
-    /* top: 0;
     left: 0; */
 }
-.wrapper__container {
-    width: 344px;
-    /* height: 100vh; */
-    margin: 0 auto;
+.wrapper-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.close__button {
+    position: absolute;
+    right: 5vw;
+    top: 2vh;
+    background-image: url("../img/header/botton-white2.svg");
+    width: 28px;
+    height: 23px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+.wrapper-container__start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.start {
+    background-image: url("../img/onbording/rent-a-car.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 280.24px;
+    height: 50px;
+}
+.wrapper-container__СhooseACountry {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-}
-.wrapper__container__block {
-    width: 100vw;
-}
-.header {
-    margin: 0 auto;
-    padding-top: 2vh;
-    width: 90vw;
-}
-.header__container {
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 36px;
-}
-.logotip__container {
-    /* height: 30px; */
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.logotip2 {
-    height: 30px;
-    width: 130px;
-    background-image: url("../img/header/logotip/logotip-white/logotip-white.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-}
-.logotip1 {
-    position: relative;
-    width: 30px;
-    height: 19px;
-}
-.logotip1__item {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 6.67px;
-    height: 11.33px;
-}
-.logotip1__item1 {
-    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern1.png");
-    top: 0;
-    left: 5px;
-}
-.logotip1__item2 {
-    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern2.png");
-    top: 11px;
-    left: 3px;
-}
-.logotip1__item3 {
-    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern3.png");
-    top: 12px;
-    left: 14px;
-}
-.logotip1__item4 {
-    background-image: url("../img/header/logotip/logotip-white/logotip-white-pattern4.png");
-    top: 2px;
-    left: 16px;
-}
-.header-button {
-    width: 22px;
-    height: 16px;
-    background-image: url("../img/header/botton-white.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: contain;
-}
-.company {
-    border-bottom: 1px solid rgba(225, 218, 162, 0.5);
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 61px;
-    width: 334px;
-}
-.company__container-face {
-    margin-right: 28px;
-}
-.company__img {
-    width: 70px;
-    height: 70px;
-    background: url("../img/company-face/company-face2x.jpg"), #c4c4c4;
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    margin-bottom: 20px;
-}
-.company__container-info {
-}
-.company__name1 {
-}
-.company__name1-1 {
-}
-.stars__container {
-    display: flex;
-    justify-content: space-between;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-.stars__item {
-    width: 25px;
-    height: 25px;
-    background-image: url("../img/company-face/star.svg");
-}
-/* :not(:active) > a.DoubleClick1:not(:hover) {
-    pointer-events: none;
-} */
-.class-car {
-    margin: 0 auto;
-    margin-bottom: 51px;
-}
-.class-car__title {
-    margin-bottom: 21px;
-    padding-left: 20px;
-}
-.class-car__container {
-    width: 334px;
-    height: 213px;
-    border-radius: 20px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: relative;
-    margin: 0 auto;
-}
-.vaz-2106-1990 {
-    background-image: url("../img/class-car/VAZ-2106-1990.jpg");
-}
-.BMW-5Series-2018 {
-    background-image: url("../img/class-car/BMW-5Series-2018.jpg");
-}
-.BMW-5Series-2015 {
-    background-image: url("../img/class-car/BMW-5Series-2015.jpg");
-}
-.BMW-MSeries-2013 {
-    background-image: url("../img/class-car/BMW-MSeries-2013.jpg");
-}
-.class-car__name {
-    position: absolute;
-    width: 100%;
-    height: 67px;
-    background: rgba(12, 6, 36, 0.8);
-    border-radius: 0px 0px 20px 20px;
     text-align: center;
-    padding-top: 12px;
-    bottom: 0;
+    padding-top: 25vh;
 }
-.class-car__disc-container {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 76px;
-    top: 8px;
-    left: 8px;
+.СhooseACountry__title {
+    margin-bottom: 20vh;
 }
-.class-car__disc-item {
-    width: 35px;
-    height: 34px;
-    background: linear-gradient(180deg, rgba(179, 153, 114, 0.5) 0%, rgba(202, 194, 128, 0.5) 100%);
-    border-radius: 30px;
-    padding: 5px;
+.СhooseACar__title {
+    margin-bottom: 24vh;
 }
-.class-car__disc-item h5 {
-    color: #0b0523;
-    text-align: center;
+.wrapper-container__img {
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-.swiper1 .class-car {
-    margin-bottom: 0;
+.СhooseACountry__img {
+    width: 301px;
+    height: 178px;
+    background-image: url("../img/onbording/СhooseACountry.png");
+    margin-bottom: 16vh;
 }
-.swiper1 {
-    margin-bottom: 79px;
+.СhooseACompany__img {
+    width: 246px;
+    height: 185px;
+    background-image: url("../img/onbording/СhooseACompany.png");
+    margin-bottom: 15vh;
 }
-.swiper-pagination {
-    margin-top: 270px;
-}
-.swiper-pagination span {
-}
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
-    opacity: 0;
-    color: #fafafa;
-}
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
-    opacity: 0;
-    color: #fafafa;
-}
-@font-face {
-    font-family: "PublicSans";
-    src: url("../fonts/PublicSans/PublicSans-Italic.ttf");
-    font-style: normal;
-    font-weight: normal;
+.СhooseACar__img {
+    width: 275.72px;
+    height: 124px;
+    background-image: url("../img/onbording/СhooseACar.png");
+    margin-bottom: 17vh;
 }
