@@ -177,9 +177,9 @@ span {
     height: 50px;
 }
 .wrapper-container__СhooseACountry {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     text-align: center;
     padding-top: 25vh;
 }
@@ -192,6 +192,7 @@ span {
 .wrapper-container__img {
     background-repeat: no-repeat;
     background-size: contain;
+    margin: 0 auto;
 }
 .СhooseACountry__img {
     width: 301px;
