@@ -211,3 +211,10 @@ span {
     background-image: url("../img/onbording/СhooseACar.png");
     margin-bottom: 17vh;
 }
+.wrapper-container__txt {
+    margin-bottom: 7vh;
+}
+.line {
+    width: 100%;
+    height: 1px;
+}
