@@ -183,11 +183,13 @@ span {
     text-align: center;
     padding-top: 25vh;
 }
-.СhooseACountry__title {
-    margin-bottom: 20vh;
+/* .СhooseACountry__title {
 }
 .СhooseACar__title {
     margin-bottom: 24vh;
+} */
+.СhooseACompany__title {
+    margin-bottom: 20vh;
 }
 .wrapper-container__img {
     background-repeat: no-repeat;
@@ -198,19 +200,28 @@ span {
     width: 301px;
     height: 178px;
     background-image: url("../img/onbording/СhooseACountry.png");
-    margin-bottom: 16vh;
+    /* margin-bottom: 16vh; */
 }
 .СhooseACompany__img {
     width: 246px;
     height: 185px;
     background-image: url("../img/onbording/СhooseACompany.png");
-    margin-bottom: 15vh;
+    /* margin-bottom: 15vh; */
 }
 .СhooseACar__img {
     width: 275.72px;
     height: 124px;
     background-image: url("../img/onbording/СhooseACar.png");
-    margin-bottom: 20vh;
+    /* margin-bottom: 17vh; */
+}
+.img__wrapper-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 185px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15vh;
 }
 .wrapper-container__txt {
     margin-bottom: 7vh;
