@@ -336,7 +336,7 @@ span {
     flex-direction: column;
     align-items: flex-start;
     padding: 4px 4px 4px 8px;
-    width: 346px;
+    width: 100%;
     height: 76px;
     background: #e5e0d3;
     box-shadow: inset 0px 0px 3px rgba(12, 6, 36, 0.3);
@@ -412,4 +412,22 @@ span {
 .fordMustang-bottom h4,
 .fordMustang-bottom h6 {
     color: #e5e0d3;
+}
+.fordMustang-top {
+    display: flex;
+    width: 76px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+.fordMustang-top1 {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(180deg, rgba(179, 153, 114, 0.5) 0%, rgba(202, 194, 128, 0.5) 100%);
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px;
+}
+.fordMustang-top1 h5 {
+    font-weight: bold;
 }
