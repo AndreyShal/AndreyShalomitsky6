@@ -327,6 +327,7 @@ h6 {
     filter: drop-shadow(0px 1px 3px rgba(61, 0, 0, 0.15)) drop-shadow(0px 4px 10px rgba(116, 105, 78, 0.15));
     border-radius: 10px;
     overflow: hidden;
+    margin: 0 auto;
     margin-bottom: 50px;
 }
 .ForPayment__title2 {
