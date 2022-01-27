@@ -3,6 +3,8 @@ function init() {
         center: [41.37727452558995, -72.8634395],
         zoom: 15
     });
+
+    return map;
 }
 
 ymaps.ready(init);
